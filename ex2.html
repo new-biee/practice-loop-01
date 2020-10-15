@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i = +prompt('Nhap nhiet do: ');
+
+    while (true) {
+        if (i > 100) {
+            alert('Bạn cần nhập nhiệt độ thấp hơn.');
+            i = +prompt('Nhap nhiet do: ');
+            if (i > 20 && i < 100){
+                alert("Nhiệt độ là " + i);
+                break;
+            }
+        } else if (i < 20) {
+            alert('Bạn cần nhập nhiệt độ cao hơn.')
+            i = +prompt('Nhap nhiet do: ');
+            if (i > 20 && i < 100){
+                alert("Nhiệt độ là " + i);
+                break;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

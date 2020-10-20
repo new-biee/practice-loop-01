@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="fibonacci()">Show Fibonacci</button>
+
+<script>
+    function fibonacci() {
+        let n = +prompt("Enter a number");  //Enter number
+
+        let a = 0;  // Declare variable a, b, count , str
+        let b = 1;
+        let count = 2;
+        let str = a + ' ' + b + ' ';
+        let sum = 1;
+        // let str2 = `${a},${b},`;
+
+        while (count < n) { // Loop While
+            let temp = a + b;   // Declare temp
+            str = str + temp + ' ';     // Assign value
+            a = b;
+            b = temp;
+            count++;    // When the condition is true count increases by one unit.
+            sum +=temp;
+        }
+        document.write(str);    // Printer str
+        document.write('<br>')
+        document.write('Sum: ' + sum);
+    }
+
+</script>
+
+</body>
+</html>

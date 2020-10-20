@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="playgame()">Playgame</button>
+<script>
+    function playgame() {
+        let number = Math.round(Math.random());
+        let num = 0;
+        let count = 0;
+        do {
+            num = +prompt('Nhập số bạn dự đoán: ');
+            count++;
+            if (num < number) {
+                alert('Số dự đoán nhỏ hơn số đúng: ')
+            } else if (num > number) {
+                alert('Số dự đoán lớn hơn số đúng: ');
+            } else
+                alert('Bạn nhập đúng sau ' + count + ' lần đoán');
+        }
+        while (num !== number)
+    }
+</script>
+</body>
+</html>

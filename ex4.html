@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let n = +prompt("Enter a number");  //Enter number
+
+    let a = 7;  // Declare variable a, b, count , str
+    let b = 14;
+    let count = 2;
+    let str = a + ' ' + b + ' ';
+    let sum = 21;
+
+    while (count < n) { // Loop While
+        let temp = a + b;   // Declare temp
+        str = str + temp + ' ';     // Assign value
+        b = temp;
+        count++;    // When the condition is true count increases by one unit.
+        sum += temp;
+    }
+    document.write(str);    // Printer str
+    document.write('<br>');
+    document.write(sum);
+
+
+</script>
+</body>
+</html>
